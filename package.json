@@ -1,0 +1,37 @@
+{
+  "name": "model-user",
+  "version": "0.0.0",
+  "description": "Model that's used with the user-API",
+  "main": "model.js",
+  "private": true,
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cargosafe/model-user"
+  },
+  "keywords": [
+    "model",
+    "users",
+    "client",
+    "server"
+  ],
+  "author": "Henrik Kjelsberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cargosafe/model-user/issues"
+  },
+  "homepage": "https://cargosafe.github.io/model-user",
+  "dependencies": {
+    "is-email": "~0.1.1",
+    "is-url": "~1.0.0",
+    "model": "git://github.com/component/model",
+    "model-timestamps": "git://github.com/component/model-timestamps"
+  },
+  "devDependencies": {
+    "component": "~0.19.5",
+    "should": "~3.0.1",
+    "mocha": "~1.17.0"
+  }
+}

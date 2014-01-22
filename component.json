@@ -1,0 +1,25 @@
+{
+  "name": "model-user",
+  "repo": "cargosafe/model-user",
+  "description": "Model that's used with the user-API",
+  "version": "0.0.1",
+  "keywords": [
+    "model",
+    "users",
+    "client",
+    "server"
+  ],
+  "dependencies": {
+    "segmentio/is-email": "*",
+    "segmentio/is-url": "*",
+    "component/model-timestamps": "*",
+    "component/model": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "model.js"
+  ],
+  "remotes": []
+}
