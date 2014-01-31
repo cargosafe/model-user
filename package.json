@@ -26,6 +26,7 @@
   "dependencies": {
     "is-email": "~0.1.1",
     "is-url": "~1.0.0",
+    "model-csrf": "git://github.com/cargosafe/model-csrf",
     "model": "git://github.com/component/model",
     "model-timestamps": "git://github.com/component/model-timestamps"
   },

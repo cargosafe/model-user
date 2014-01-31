@@ -5,20 +5,24 @@
 
 ## Installation
 
-  Install with [component(1)](http://component.io):
+  Install with [component(1)](//component.io):
 
     $ component install cargosafe/model-user
+
+  Or [npm(1)](//nodejs.org)
+
+    $ npm install cargosafe/model-user
 
 ## API
 
 ```javascript
+// window._csrf has to contain a token
 // The fields below are all required
 
 var user = new User({
   "login": "johndoe",
   "name": "John Doe",
-  "email": "john@doe.com",
-  "company": "Unknown company"
+  "email": "john@doe.com"
 });
 
 // Save, will send a request to the API

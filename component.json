@@ -12,6 +12,7 @@
   "dependencies": {
     "segmentio/is-email": "*",
     "segmentio/is-url": "*",
+    "cargosafe/model-csrf": "*",
     "component/model-timestamps": "*",
     "component/model": "*"
   },
