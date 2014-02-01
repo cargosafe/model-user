@@ -16,7 +16,6 @@
 ## API
 
 ```javascript
-// window._csrf has to contain a token
 // The fields below are all required
 
 var user = new User({

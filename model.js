@@ -7,7 +7,6 @@ var model = require('model');
 var isEmail = require('is-email');
 var isUrl = require('is-url');
 var timestamps = require('model-timestamps');
-var csrf = require('model-csrf')();
 
 function isPhone(str){
   str = str.replace(/[^0-9x\+]*/g, '').replace('x', '00');
@@ -24,7 +23,6 @@ function isSlug(slug){
  */
 
 var User = module.exports = model('User')
-  .use(csrf)
   .use(timestamps)
   .attr('slug', {required: true, validate: isSlug})
   .attr('name', {required: true, type: 'string'})

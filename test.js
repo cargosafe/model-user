@@ -3,14 +3,12 @@
  * Test dependencies.
  */
 
-window = {};
-window._csrf = 'some token';
 var User = require('./model');
 
 describe('User', function(){
   var user;
 
-  it('should require a CSRF-token', function(done){
+  before(function(done){
     user = new User({
       "slug": "hkjels",
       "name": "Henrik Kjelsberg",
