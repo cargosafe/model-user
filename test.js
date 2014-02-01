@@ -12,7 +12,7 @@ describe('User', function(){
 
   it('should require a CSRF-token', function(done){
     user = new User({
-      "login": "hkjels",
+      "slug": "hkjels",
       "name": "Henrik Kjelsberg",
       "email": "hkjels@me.com"
     });
