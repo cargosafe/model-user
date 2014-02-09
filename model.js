@@ -4,6 +4,7 @@
  */
 
 var model = require('model');
+var modeltype = require('model-type');
 var isEmail = require('is-email');
 var isUrl = require('is-url');
 var timestamps = require('model-timestamps');
@@ -24,6 +25,7 @@ function isSlug(slug){
 
 var User = module.exports = model('User')
   .use(timestamps)
+  .use(modeltype)
   .attr('slug', {required: true, validate: isSlug})
   .attr('name', {required: true, type: 'string'})
   .attr('email', {required: true, validate: isEmail})
