@@ -9,7 +9,7 @@ build: components model.js
 components: component.json
 	@$(COMPONENT) install
 
-test:
+test: build
 	@NODE_ENV=test $(MOCHA) \
 		--require should \
 		--reporter spec \

@@ -19,9 +19,10 @@
 // The fields below are all required
 
 var user = new User({
-  "login": "johndoe",
+  "slug": "johndoe",
   "name": "John Doe",
-  "email": "john@doe.com"
+  "email": "john@doe.com",
+  "role": 20
 });
 
 // Save, will send a request to the API
