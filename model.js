@@ -55,6 +55,7 @@ function isRole(role){
 var User = module.exports = model('User')
   .use(timestamps)
   .use(modeltype)
+  .attr('_id')
   .attr('slug', {validate: isSlug})
   .attr('name', {type: 'string'})
   .attr('email', {validate: isEmail})
