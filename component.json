@@ -13,6 +13,7 @@
     "segmentio/is-email": "*",
     "segmentio/is-url": "*",
     "cargosafe/model-type": "*",
+    "cargosafe/model-required": "*",
     "component/model-timestamps": "*",
     "component/model": "*"
   },

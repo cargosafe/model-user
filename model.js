@@ -5,6 +5,7 @@
 
 var model = require('model');
 var modeltype = require('model-type');
+var required = require('model-required');
 var isEmail = require('is-email');
 var isUrl = require('is-url');
 var timestamps = require('model-timestamps');
@@ -54,12 +55,16 @@ function isRole(role){
 var User = module.exports = model('User')
   .use(timestamps)
   .use(modeltype)
-  .attr('slug', {required: true, validate: isSlug})
-  .attr('name', {required: true, type: 'string'})
-  .attr('email', {required: true, validate: isEmail})
-  .attr('role', {required: true, type: 'number', validate: isRole})
+  .attr('slug', {validate: isSlug})
+  .attr('name', {type: 'string'})
+  .attr('email', {validate: isEmail})
+  .attr('role', {type: 'number', validate: isRole})
   .attr('photo', {validate: isUrl})
-  .attr('phone', {validate: isPhone});
+  .attr('phone', {validate: isPhone})
+  .use(required('slug'))
+  .use(required('name'))
+  .use(required('email'))
+  .use(required('role'));
 
 User.prototype.firstname = function(){
   return this.name().split(' ').shift();
